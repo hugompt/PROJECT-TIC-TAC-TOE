@@ -31,6 +31,7 @@
     1px -1px 0 var(--blueish),
     -1px 1px 0 var(--blueish),
     1px 1px 0 var(--blueish);
+    border: 2px 2px 2px blur red;
 
 }
 
@@ -40,7 +41,16 @@ body{
     background-color: var(--greyish);
 }
 
-/* Main game table code below */
+/* Main game code and table code below */
+.main{
+    display:flex;
+    justify-content: center;  
+    margin-top: 100px;  
+}
+.container{
+    width: 40rem;
+    height: 40rem;
+}
 table {
     width: 100%;
     border-collapse: collapse;
@@ -91,7 +101,6 @@ table {
     left: 0;
     display: flex;
     justify-content: center;
-    align-items: flex-end;   
 }
 
 .fa-github {
