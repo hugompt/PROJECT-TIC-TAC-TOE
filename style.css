@@ -1,0 +1,39 @@
+/* Global variables */
+:root {
+    --whitish: rgb(232, 229, 229);
+    --blackish: rgb(31, 31, 31);
+    --red: red;
+    --regFont: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+
+
+
+
+/* Footer code below */
+.footer{
+    font-family: var(--regFont);
+    background-color: var(--blackish);
+    color: var(--whitish);
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+   
+}
+
+.fa-github {
+    color: var(--red);
+    font-size: 20px;
+    transition: transform 0.3s ease-in-out;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.fa-github:hover {
+    transform: rotate(360deg) scale(1.5);
+}
