@@ -7,6 +7,7 @@
     --blackish: rgb(31, 31, 31);
     --greyish: rgb(84, 83, 83);
     --blueish: rgb(0, 208, 255);
+    --orangeish: rgb(255, 111, 0);
     --red: red;
     --regFont: 'Orbitron', sans-serif;;
 }
@@ -17,6 +18,7 @@
 
 /* Header code below */
 .header{
+    padding: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,12 +40,50 @@ body{
     background-color: var(--greyish);
 }
 
+/* Main game table code below */
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  td {
+    width: 33.333%;
+    border: 6px solid #222;
+  }
+  
+  td::after {
+    content: "";
+    display: block;
+    margin-top: 100%;
+  }
+  
+  td {
+    border: 6px solid #222;
+  }
+  
+  td:first-of-type {
+    border-left-color: transparent;
+    border-top-color: transparent;
+  }
+  
+  td:nth-of-type(2) {
+    border-top-color: transparent;
+  }
+  
+  td:nth-of-type(3) {
+    border-right-color: transparent;
+    border-top-color: transparent;
+  }
+  
+  tr:nth-of-type(3) td {
+    border-bottom-color: transparent;
+  }
 
 /* Footer code below */
 .footer{
     font-family: var(--regFont);
     background-color: var(--blackish);
-    color: var(--whitish);
+    color: var(--orangeish);
     padding: 10px;
     position: absolute;
     bottom: 0;
@@ -51,8 +91,7 @@ body{
     left: 0;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-   
+    align-items: flex-end;   
 }
 
 .fa-github {
